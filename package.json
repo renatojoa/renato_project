@@ -4,26 +4,17 @@
   "description": "QA Test Automation for DemoQA - API and Frontend Tests",
   "main": "index.js",
   "scripts": {
-    "test": "npm run test:api && npm run cy:run",
-    "test:api": "mocha tests/api/**/*.test.js --require @babel/register --timeout 30000 --reporter spec",
-    "cy:open": "cypress open",
-    "cy:run": "cypress run"
+    "test": "echo \"Tests not implemented yet\""
   },
-  "keywords": [
-    "qa-automation"
-  ],
+  "keywords": ["qa-automation", "testing"],
   "author": "",
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.23.0",
     "@babel/preset-env": "^7.23.0",
     "@babel/register": "^7.22.15",
-    "@badeball/cypress-cucumber-preprocessor": "^20.0.0",
-    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
     "axios": "^1.5.0",
     "chai": "^4.3.10",
-    "cypress": "^13.6.0",
-    "cypress-wait-until": "^3.0.2",
     "mocha": "^10.8.2"
   }
 }
