@@ -2,10 +2,26 @@
   "name": "demoqa-automation",
   "version": "1.0.0",
   "scripts": {
-    "test": "npm run test:api && npm run cy:run",
+    "test": "npm run test:api && npm run test:frontend",
     "test:api": "mocha tests/api/**/*.test.js --require @babel/register --timeout 30000",
-    "cy:open": "cypress open",
-    "cy:run": "cypress run"
+    "test:frontend": "cypress run --spec 'cypress/e2e/**/*.feature'",
+    "test:exercicio1": "npm run test:api",
+    "test:exercicio2": "cypress run --env TAGS=@exercicio2",
+    "test:exercicio3": "cypress run --env TAGS=@exercicio3",
+    "test:exercicio4": "cypress run --env TAGS=@exercicio4",
+    "test:exercicio5": "cypress run --env TAGS=@exercicio5",
+    "test:exercicio6": "cypress run --env TAGS=@exercicio6",
+    "test:forms": "cypress run --spec 'cypress/e2e/forms.feature'",
+    "test:windows": "cypress run --spec 'cypress/e2e/browser-windows.feature'",
+    "test:tables": "cypress run --spec 'cypress/e2e/web-tables.feature'",
+    "test:progressbar": "cypress run --spec 'cypress/e2e/progress-bar.feature'",
+    "test:sortable": "cypress run --spec 'cypress/e2e/sortable.feature'",
+    "cy:open": "cypress open"
+  },
+  "cypress-cucumber-preprocessor": {
+    "stepDefinitions": [
+      "cypress/support/step-definitions/**/*.js"
+    ]
   },
   "devDependencies": {
     "@babel/core": "^7.23.0",
