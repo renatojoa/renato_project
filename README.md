@@ -1,23 +1,14 @@
 # DemoQA Automation
 
-Projeto de automação de testes para o site DemoQA.
+## ✅ Implementado
+- [x] Setup inicial
+- [x] **Teste completo de API - BookStore Flow (6 testes)**
 
-## Estrutura Planejada
-
-```
-tests/
-├── api/          # Testes de API
-└── frontend/     # Testes de frontend
-```
-
-## Setup
-
+## 🚀 Executar
 ```bash
 npm install
+npm run test:api:flow
 ```
 
-## Próximos Passos
-
-- [ ] Implementar testes de API
-- [ ] Implementar testes de frontend
-- [ ] Adicionar CI/CD
+## 📊 Cobertura
+- **6 testes de API** - Fluxo completo BookStore
