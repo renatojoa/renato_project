@@ -6,9 +6,13 @@
   "scripts": {
     "test": "npm run test:api",
     "test:api": "mocha tests/api/**/*.test.js --require @babel/register --timeout 30000 --reporter spec",
-    "test:api:flow": "mocha tests/api/bookstore.test.js --require @babel/register --timeout 30000 --reporter spec"
+    "test:api:flow": "mocha tests/api/bookstore.test.js --require @babel/register --timeout 30000 --reporter spec",
+    "test:api:users": "mocha tests/api/user-creation.test.js --require @babel/register --timeout 30000 --reporter spec",
+    "test:api:books": "mocha tests/api/books-listing.test.js --require @babel/register --timeout 30000 --reporter spec",
+    "test:api:auth": "mocha tests/api/authentication.test.js --require @babel/register --timeout 30000 --reporter spec",
+    "test:api:rental": "mocha tests/api/book-rental.test.js --require @babel/register --timeout 30000 --reporter spec"
   },
-  "keywords": ["qa-automation", "testing"],
+  "keywords": ["qa-automation"],
   "author": "",
   "license": "MIT",
   "devDependencies": {

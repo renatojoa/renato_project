@@ -2,13 +2,18 @@
 
 ## ✅ Implementado
 - [x] Setup inicial
-- [x] **Teste completo de API - BookStore Flow (6 testes)**
+- [x] **Suite completa de testes de API (56 testes)**
 
 ## 🚀 Executar
 ```bash
 npm install
-npm run test:api:flow
+npm run test:api
 ```
 
 ## 📊 Cobertura
-- **6 testes de API** - Fluxo completo BookStore
+### **56 testes de API**
+- BookStore Flow (6)
+- User Creation (15)
+- Authentication (13)
+- Books Listing (8)
+- Book Rental (14)
