@@ -1,69 +1,79 @@
 # DemoQA Automation
 
-Projeto de automação com API (Mocha) e Frontend (Cypress + BDD).
+Projeto com Page Object Model e geração automática de dados.
 
 ## ✅ Implementado
 
 - [x] Suite completa de testes de API (56 testes)
-- [x] Sistema de tags
-- [x] **Cypress instalado e configurado**
-- [x] **Suporte BDD com Cucumber**
-- [ ] Page Objects
+- [x] Cypress configurado
+- [x] **6 Page Objects implementados**
+- [x] **DataHelper para geração de dados**
 - [ ] Features BDD
+- [ ] Step Definitions
 - [ ] CI/CD
 
 ## 🚀 Como Executar
 
-### Setup
 ```bash
 npm install
+npm run test:api        # Testes de API
+npm run cy:open         # Cypress UI
 ```
 
-### Testes de API
-```bash
-npm run test:api
+## 📁 Page Objects
+
+### Implementados
+1. **HomePage.js**
+   - Navegação entre seções
+   - Remoção de anúncios
+
+2. **PracticeFormPage.js**
+   - Preenchimento de formulário
+   - Upload de arquivos
+   - Validação de dados submetidos
+   - Verificação do modal de confirmação
+
+3. **WebTablesPage.js**
+   - CRUD completo de registros
+   - Busca e validação de dados
+
+4. **BrowserWindowsPage.js**
+   - Manipulação de janelas e abas
+   - Stub de window.open
+
+5. **ProgressBarPage.js**
+   - Interação com barra de progresso
+   - Espera condicional com waitUntil
+
+6. **SortablePage.js**
+   - Drag and drop
+   - Verificação de ordenação
+
+### DataHelper
+```javascript
+DataHelper.generateFormData()      // Dados de formulário
+DataHelper.generateRecordData()    // Dados de tabela
+DataHelper.generateFirstName()     // Nome aleatório
+DataHelper.generateEmail()         // Email único
 ```
 
-### Testes de Frontend (Cypress)
-```bash
-# Abrir Cypress UI (recomendado para desenvolvimento)
-npm run cy:open
+## 🏗️ Arquitetura
 
-# Executar em modo headless
-npm run cy:run
 ```
-
-## 🌲 Cypress
-
-### Configuração
-- ✅ Cypress 13.6.0 instalado
-- ✅ Cucumber preprocessor configurado
-- ✅ Custom commands:
-  - `cy.removeAds()` - Remove anúncios do DemoQA
-  - `cy.waitUntil()` - Espera condicional
-- ✅ Manipulação global de erros
-- ✅ Fixtures para dados de teste
-
-### Estrutura
+cypress/support/
+├── pages/                  # Page Objects
+│   ├── HomePage.js
+│   ├── PracticeFormPage.js
+│   ├── WebTablesPage.js
+│   ├── BrowserWindowsPage.js
+│   ├── ProgressBarPage.js
+│   └── SortablePage.js
+└── helpers/
+    └── dataHelper.js      # Geração de dados
 ```
-cypress/
-├── e2e/                # Features BDD (a criar)
-├── support/
-│   ├── commands.js     # Custom commands
-│   └── e2e.js          # Setup global
-└── fixtures/
-    └── sample-upload.txt
-```
-
-## 📊 Cobertura Atual
-
-- **56 testes de API** ✅
-- **Cypress configurado** ✅
-- **Testes de frontend** ⏳ (próximo)
 
 ## 🎯 Próximos Passos
 
-1. Criar Page Objects
-2. Criar Features BDD
-3. Criar Step Definitions
-4. Adicionar CI/CD
+1. Criar Features BDD usando os Page Objects
+2. Criar Step Definitions
+3. Executar testes de frontend

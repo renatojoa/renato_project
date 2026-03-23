@@ -1,8 +1,0 @@
-This is a sample file for testing file upload functionality.
-
-File created for DemoQA Practice Form automation testing.
-Project: QA Automation Test Suite with Cypress
-Created: Mar, 2026
-Author: Renato A.
-
-This file is used to test the upload functionality in the Practice Form scenario.
