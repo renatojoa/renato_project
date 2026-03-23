@@ -4,13 +4,14 @@
   "description": "QA Test Automation for DemoQA - API and Frontend Tests",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Tests not implemented yet\""
+    "test": "npm run test:api",
+    "test:api": "mocha tests/api/**/*.test.js --require @babel/register --timeout 30000 --reporter spec",
+    "test:api:flow": "mocha tests/api/bookstore.test.js --require @babel/register --timeout 30000 --reporter spec"
   },
   "keywords": [
     "qa-automation",
     "testing",
-    "api-testing",
-    "e2e-testing"
+    "api-testing"
   ],
   "author": "",
   "license": "MIT",
