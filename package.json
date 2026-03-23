@@ -1,0 +1,25 @@
+{
+  "name": "demoqa-automation",
+  "version": "1.0.0",
+  "description": "QA Test Automation for DemoQA - API and Frontend Tests",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Tests not implemented yet\""
+  },
+  "keywords": [
+    "qa-automation",
+    "testing",
+    "api-testing",
+    "e2e-testing"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.23.0",
+    "@babel/preset-env": "^7.23.0",
+    "@babel/register": "^7.22.15",
+    "axios": "^1.5.0",
+    "chai": "^4.3.10",
+    "mocha": "^10.8.2"
+  }
+}
