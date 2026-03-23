@@ -1,19 +1,9 @@
 # DemoQA Automation
 
-## ✅ Implementado
-- [x] Setup inicial
-- [x] **Suite completa de testes de API (56 testes)**
+## ✅ Parte 1 - API (Completo)
+Fluxo: criar usuário → token → autorizar → listar → alugar 2 livros → verificar
 
-## 🚀 Executar
 ```bash
 npm install
 npm run test:api
 ```
-
-## 📊 Cobertura
-### **56 testes de API**
-- BookStore Flow (6)
-- User Creation (15)
-- Authentication (13)
-- Books Listing (8)
-- Book Rental (14)

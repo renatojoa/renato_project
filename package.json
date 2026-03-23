@@ -1,20 +1,10 @@
 {
   "name": "demoqa-automation",
   "version": "1.0.0",
-  "description": "QA Test Automation for DemoQA - API and Frontend Tests",
-  "main": "index.js",
   "scripts": {
     "test": "npm run test:api",
-    "test:api": "mocha tests/api/**/*.test.js --require @babel/register --timeout 30000 --reporter spec",
-    "test:api:flow": "mocha tests/api/bookstore.test.js --require @babel/register --timeout 30000 --reporter spec",
-    "test:api:users": "mocha tests/api/user-creation.test.js --require @babel/register --timeout 30000 --reporter spec",
-    "test:api:books": "mocha tests/api/books-listing.test.js --require @babel/register --timeout 30000 --reporter spec",
-    "test:api:auth": "mocha tests/api/authentication.test.js --require @babel/register --timeout 30000 --reporter spec",
-    "test:api:rental": "mocha tests/api/book-rental.test.js --require @babel/register --timeout 30000 --reporter spec"
+    "test:api": "mocha tests/api/**/*.test.js --require @babel/register --timeout 30000"
   },
-  "keywords": ["qa-automation"],
-  "author": "",
-  "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.23.0",
     "@babel/preset-env": "^7.23.0",
