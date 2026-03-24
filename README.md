@@ -2,7 +2,7 @@
 
 ## ✅ Exercícios
 
-### Exercício 1 - API Backend `@exercicio1`
+### Exercício 1 - API Backend (1 Cenários)
 Fluxo completo da BookStore API:
 - Criar usuário
 - Gerar token
