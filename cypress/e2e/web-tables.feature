@@ -15,3 +15,13 @@ Feature: Web Tables Management
     Then the record should be updated
     When I delete the edited record
     Then the record should be removed from the table
+
+  @bonus @tables @bulk-operations
+  Scenario: Create and delete 12 records dynamically
+    Given I am on the DemoQA homepage
+    When I navigate to Elements section
+    And I click on Web Tables
+    And I create 12 new records with random data
+    Then all 12 records should appear in the table
+    When I delete all created records
+    Then all created records should be removed from the table

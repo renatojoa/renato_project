@@ -1,13 +1,27 @@
 class DataHelper {
   static generateFirstName() {
-    const names = ['John', 'Jane', 'Michael', 'Emily', 'David', 'Sarah', 'Robert', 'Lisa'];
+    const names = [
+      'John', 'Jane', 'Michael', 'Emily', 'David', 'Sarah', 'Robert', 'Lisa', 
+      'Brian', 'Mary', 'Linda', 'James', 'Patricia', 'Jennifer', 'William', 
+      'Elizabeth', 'Richard', 'Susan', 'Joseph', 'Jessica', 'Thomas', 'Karen',
+      'Christopher', 'Nancy', 'Daniel', 'Betty', 'Paul', 'Helen', 'Mark', 'Sandra',
+      'Donald', 'Donna', 'George', 'Carol', 'Kenneth', 'Ruth', 'Steven', 'Sharon',
+      'Edward', 'Michelle', 'Kevin', 'Laura', 'Jason', 'Kimberly', 'Andrew', 'Deborah'
+    ];
     return names[Math.floor(Math.random() * names.length)];
-  }
+}
 
-  static generateLastName() {
-    const names = ['Smith', 'Johnson', 'Williams', 'Brown', 'Jones', 'Garcia', 'Miller', 'Davis'];
+static generateLastName() {
+    const names = [
+      'Smith', 'Johnson', 'Williams', 'Brown', 'Jones', 'Garcia', 'Miller', 'Davis', 
+      'Lopes', 'Taylor', 'Adams', 'Lee', 'Rodriguez', 'Martinez', 'Hernandez', 
+      'Lopez', 'Gonzalez', 'Wilson', 'Anderson', 'Thomas', 'Taylor', 'Moore', 
+      'Jackson', 'Martin', 'Thompson', 'White', 'Harris', 'Sanchez', 'Clark', 
+      'Ramirez', 'Lewis', 'Robinson', 'Walker', 'Young', 'Allen', 'King', 'Wright',
+      'Scott', 'Torres', 'Nguyen', 'Hill', 'Flores', 'Green', 'Nelson', 'Baker'
+    ];
     return names[Math.floor(Math.random() * names.length)];
-  }
+}
 
   static generateEmail() {
     const timestamp = Date.now();
