@@ -11,6 +11,9 @@ import './commands';
 // Import cypress-wait-until
 import 'cypress-wait-until';
 
+// Import cypress drag-drop
+import '@4tw/cypress-drag-drop';
+
 // Hide fetch/XHR requests from command log to reduce noise
 const app = window.top;
 if (!app.document.head.querySelector('[data-hide-command-log-request]')) {
