@@ -1,7 +1,7 @@
 const axios = require('axios');
 const { expect } = require('chai');
 
-describe('BookStore API - Complete Flow', function() {
+describe('BookStore API - Complete Flow @exercicio1', function() {
   this.timeout(60000);
 
   const baseURL = process.env.API_BASE_URL || 'https://demoqa.com';
